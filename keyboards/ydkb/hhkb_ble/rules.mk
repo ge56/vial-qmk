@@ -14,18 +14,18 @@ BOOTLOADER_SIZE = 6144
 CUSTOM_MATRIX           = yes # Custom matrix file
 UNICODE_ENABLE          = yes # Unicode
 BOOTMAGIC_ENABLE        = yes # Enable Bootmagic Lite
-MOUSEKEY_ENABLE         = yes # Mouse keys
-EXTRAKEY_ENABLE         = yes # Audio control and System control
+MOUSEKEY_ENABLE         = no  # Mouse keys
+EXTRAKEY_ENABLE         = no  # Audio control and System control
 CONSOLE_ENABLE          = no  # Console for debug
 COMMAND_ENABLE          = yes # Commands for debug and configuration
 NKRO_ENABLE             = yes # Enable N-Key Rollover
 BACKLIGHT_ENABLE        = no  # Enable keyboard backlight functionality
 RGBLIGHT_ENABLE         = no
-LTO_ENABLE              = yes 
+LTO_ENABLE              = yes
 
 # project specific files
 SRC = \
     led_fn.c      \
     matrix.c   \
-    
+
 include $(TMK_DIR)/protocol/ble51.mk
