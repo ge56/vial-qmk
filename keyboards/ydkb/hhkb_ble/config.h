@@ -6,7 +6,7 @@
 #define FW_VER          QMK_DM4S
 #define FW_VER_VIA      VIA_DM4S
 #define FW_VER_VIAL     VIAL_DMCL
-#define VENDOR_ID       0x9D5B 
+#define VENDOR_ID       0x9D5B
 #define PRODUCT_ID      0x19C0
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    YDKB
@@ -20,8 +20,9 @@
 
 #define TAPPING_TOGGLE  2
 
-#define TAPPING_TERM    200
-#define IGNORE_MOD_TAP_INTERRUPT // this makes it possible to do rolling combos (zx) with keys that convert to other keys on hold (z becomes ctrl when you hold it, and when this option isn't enabled, z rapidly followed by x actually sends Ctrl-x. That's bad.)
+#define TAPPING_TERM 150
+#define TAPPING_FORCE_HOLD
+#define RETRO_TAPPING
 
 
 /* key combination for command */
